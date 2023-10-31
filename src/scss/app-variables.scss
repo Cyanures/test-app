@@ -1,0 +1,56 @@
+/* Colors: */
+$color-grey-light: #F5F5F5;
+$color-blue-light: #EDECFE; 
+$color-grey-dark: #656565;
+$color-grey-darker: #55555A;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-blue-interactive: #0F56B3;
+$color-blue-dark: #0A427A;
+$color-blue-menu: #C5DCFA;
+$color-blue-extra-light: #F6F6FF;
+$color-yellow-alert: #D4B011;
+$color-yellow-alert-light: #FBF3D0;
+$color-green-alert: #6FCF97;
+$color-green-alert-light: #a7ddbd;
+$color-red-alert: #E86172;
+$color-vinci-blue: #004990;
+$color-grey-55595d: #55595d;
+$color-grey-f6f6f6: #f6f6f6;
+$color-red-dc3545: #dc3545;
+$color-orange-d69125: #d69125;
+$color-green-00b98b: #00b98b;
+$color-blue-dce2e9: #dce2e9;
+$color-blue-014489: #014489;
+$color-yellow-e6cf01: #e6cf01;
+$color-blue-003d7b: #003D7B;
+$color-blue-03284e: #03284e;
+
+
+
+$color-text: $color-grey-dark;
+$color-link: $color-blue-dark;
+$color-link-alt: $color-text;
+$color-link-hover: $color-blue-dark;
+$color-link-active: $color-blue-interactive;
+$color-link-focus: $color-grey-dark;
+
+
+/* Font/text values */
+$font-weight-100-thin: 100;
+$font-weight-300-light: 300;
+$font-weight-400-regular: 400;
+$font-weight-500-medium: 500;
+$font-weight-600-semibold: 600;
+$font-weight-700-bold: 700;
+$font-weight-800-extrabold: 800;
+$font-weight-900-black: 900;
+
+$font-family: "Vinci", "Roboto", "Lato", "Calibri";
+$font-family-vinci: "Vinci", "Calibri";
+$font-family-roboto: "Roboto", "Calibri";
+$font-family-lato: "Lato", "Calibri";
+
+$white-svg-filter:invert(100%) sepia(100%) saturate(2%) hue-rotate(160deg) brightness(106%) contrast(101%);
+$blue-svg-filter: invert(17%) sepia(33%) saturate(5018%) hue-rotate(198deg) brightness(97%) contrast(99%);
+$grey-svg-filter: invert(36%) sepia(7%) saturate(385%) hue-rotate(169deg) brightness(89%) contrast(86%);

@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-between align-items-start" role="banner">
+  <div class="d-flex flex-row align-items-center">
+    <nav role="navigation" data-cy="navbar" aria-label="Main" class="d-flex flex-row">
+      <a class="navbar-brand logo" routerLink="/">
+        <span class="logo-img"></span>
+        <span class="sr-only">{{ 'back.home' | translate }}</span>
+      </a>
+      <div class="d-none d-md-flex flex-row nav-container navbar-nav">
+
+      
+
+        <div>
+          <button routerLink="employes" routerLinkActive="active">{{ 'employees' | translate }}</button>
+        </div>
+
+        <div>
+          <button [class.active]="menu.menuOpen" #menu="matMenuTrigger" [matMenuTriggerFor]="menuFormation">{{ 'trainings' | translate }}</button>
+          <mat-menu #menuFormation="matMenu">
+              <button mat-menu-item (click)="workInProgressAlert()">{{ 'training.sessions' | translate }}</button>
+              <button mat-menu-item (click)="workInProgressAlert()">{{ 'accreditations' | translate }}</button>
+              <button mat-menu-item (click)="workInProgressAlert()">{{ 'authorizations' | translate }}</button>
+              <button mat-menu-item (click)="workInProgressAlert()">{{ 'driving.licence' | translate }}</button>
+          </mat-menu>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

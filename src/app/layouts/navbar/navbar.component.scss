@@ -1,0 +1,192 @@
+@import '../../../scss/app-variables.scss';
+@import '../../../scss/global.scss';
+/* ==========================================================================
+Navbar
+========================================================================== */
+
+.profile-image, .svg-profile-image {
+  height: 46px;
+  width: 46px;
+}
+
+/* ==========================================================================
+Logo styles
+========================================================================== */
+.logo-img {
+  height: 31px;
+  width: 150px;
+  display: inline-block;
+  vertical-align: middle;
+  //background: url('../../../content/images/logo.svg') no-repeat center center;
+  background-size: contain;
+  margin-left: 38px;
+  margin-right: 38px;
+}
+
+
+/* ==========================================================================
+New style
+========================================================================== */
+nav {
+  //background: transparent linear-gradient(296deg, var(--unnamed-color-03284e) 0%, var(--unnamed-color-014489) 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(296deg, #03284E 0%, #014489 100%) 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 26px 0px;
+  padding: 1rem;
+  .nav-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 14px;
+  
+    div {
+      height: 70%;
+      padding-left: 0.5em;
+      &:last-child {
+        padding-right: 0.5em;
+      }
+  
+      button {
+        transition: all 0.3s;
+        height: 100%;
+        border: none;
+        border-radius: 11px;
+        background: none;
+        color: $color-white;
+        font-size: 14px;
+        font-family: $font-family;
+        &.active {
+          background: $color-white 0% 0% no-repeat padding-box;
+          color: $color-blue-03284e;
+        }
+        &:hover {
+          background: $color-white 0% 0% no-repeat padding-box;
+          color: $color-blue-03284e;
+        }
+      }
+    }
+  }
+}
+
+::ng-deep .mat-menu-panel {
+  margin-top: 1em;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 20px #0000001d;
+  border-radius: 12px!important;
+  opacity: 1;
+  .mat-menu-content {
+    padding: 8px;
+  }
+  .mat-menu-item{
+    text-align: left;
+    font-family: Vinci, Roboto, Lato, Calibri;
+    letter-spacing: 0px;
+    color: $color-blue-03284e;
+    opacity: 1;
+    &:hover,&:active {
+      background: #f2f5f9 0% 0% no-repeat padding-box;
+      border-radius: 11px;
+      color: $color-blue-014489;
+      font-size: 14px;
+    }
+  }
+}
+
+.navbar-nav .nav-item {
+  margin-left: 15px;
+
+  .profil {
+    background-color: $color-blue-light;
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+  }
+}
+
+
+.dropdown-noArrow::after {
+  display:none;
+}
+
+.accountName {
+  font-family: $font-family-lato;
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+.entiteDropdown {
+  height: fit-content; 
+  transform: translate(-332px, -100px) !important;
+}
+
+.lienEntite{
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.lienEntite:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #343a40;
+}
+
+#help-icon {
+  height: 30px;
+  width: 30px;
+  background-color: $color-blue-light;
+  border-radius: 50%;
+
+  img {
+    width: 15px;
+    height: 15px;
+    margin: auto;
+  }
+}
+
+/* ==========================================================================
+New style - Mobile
+========================================================================== */
+@media (max-width: 767px) {
+  .profile-image, .svg-profile-image {
+    height: 29px;
+    width: 29px;
+  }
+
+  .accountNameContainer {
+    max-width: calc(100vw - 168px - 46px - 92px);
+    min-width: 20px;
+
+    .accountName {
+      padding-right: 0px;
+      font-size: 3vw;
+    }
+  }
+
+
+  nav{
+    padding: 0.6rem 25px 0.6rem 25px;
+
+    .logo-img {
+      height: 21px;
+      width: 102px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+}
+
+
+
+
+
+
